@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free and Funny Browser-Games</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header>
+        <div class="search">
+            <input type="text" class="search__input" placeholder="search games">
+            <button class="search__button">
+                <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <g>
+                        <path
+                            d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                        </path>
+                    </g>
+                </svg>
+            </button>
+        </div>
+
+        <button class="sign">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA4ElEQVR4nO3YPW7CQBBAYSclUmTlENTQoJwAbhDlGjlGbgAdR/E9aFAqSugovxRQpMgPmN3Ea8+TprI0+zQ7s15tVQXB5aDGY6Z4SCm6lY9m0KLveEsUh5yiTZdzViF6IiqaBNGjfZh6jFLnbMVPSbHADk+dFcUEx/O3PWb/LVp/ddPBPdbnBa+SzSL6y4J3WH6SPVzSBq1FMcZzy3jB5prK3iL6Ki17TActOi5i628cptWfDVMvjicFHfjb75Ji3vlfaFGXkraEqKio6NEkiKkv7JEsB80gResinsaDPvABqYPNg18NB20AAAAASUVORK5CYII=">
+        </button>
+
+        <button class="profil">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD1ElEQVR4nO2Z2W9PQRTHfz8JHhrSNq0laqlERCxPvKO0vFjbeiBVa0RssUQiEomSEEFjeRAvxO6B8IiK6vJPWKoI4cESHmztR6Y9IyfjLnP7u60Hv2/S3MzMd773dO6Zc87ML5PJI488/gJQClQDh4EbwH2gTZ6mfQhYDpRk/iWAIUA90Ax044du4BGw2swfSGMHARuB1+SGV8B6o9ffBk8E2gMMeAI0iotMA4qAQqBY2tUy/ixgrtEr7y+DFwCfnBe2ALOBrKdGVvjG3zU+AlVpG7wC+KFe8hxYlKPmEqBDaX4HatNcYW3wo7SiAL1Rp9kxvDINH9YucQkYHMEfCWwFLku4M88tpj8mChldiw/AhFyiRLuzwoMjfHUv8JVgfAX2hPm+GK5XvNV3n7hCGx0fDnUJ4Dx+OBfjKi8Ud21Sg4c6cTh00wEbFK8LOAPMFCNmAWelP9YYYKnivUyUgCTTWbRE8Mxnfauy3coQ3iql9yZmX+hwWJfEaO1fsyN4lYp3J0bzruLOi+DNVbyHvgaXqlriSdSGAHarF9TH6K5R3F0RvKzsIetuxT5Gm5RrcTKGe0BxF3skE4sDMdzTf5iwzMdoU0ZaVMdw1ynuvhjufsVdF8OtVdyDPkbfVBOmxnDHK1cyu31YCG+4VHX2k4+L0Z2ubLjuY7TJZBax6Rq4rfhNZk844yOk3+KW576yuOdjtMlGFgUe/HHAezXnM3AFOCJP07Z4B4z10CxQc1pTX2mZU4Mfqj31Eq+0OdN5+bTwdwLfPI3+Buzw0NQ+fS3t6HEyoJi/CGyW1d8s7U8O71ja0UPH6cYI3ibHEBNbC0O4RVKTaGzwjNNLfYwuUQXO06CMCIx2ytBtscKZnnnb1ZwvwKiQjGhPNL+8MqJMNLWzxZyA8eNq/IKXqMAp+I8GjFeo8aaML+ReIjDkyErYys4cw8Z4C2d65pcBP1XFl3W02/ta5Q1RGcxgiRqbrPofJDHYwlRvSmOS6l+m+jsTX+jIRYpFh810wELVfzyRqAA4oTQWqMxpDPWqGn3PiM3yBcoknJm/KYmFMz3aU5RGmeg+du5Tkp8RRbxcYq/FpbTv4Og12Jzacz+NK9Eq596j2S2KctAe4aywufeYn4a2zVBG0OKFV9AP18vK1a/2YaNfk4rBznnQfDqNNjnTJbnLqwi4xPyQ2goHvHSCU7pamDPdKfkiMySrFsrTtGslNet7Db3pxveLwc5qrXU+bV/QKYfdvkWJHHZ9nSQKfRkThS45xdQN6C8BIf9AsdwONQBX5SDRKk/TbpBxv+Injzz+M/wG4GFzP2EukfEAAAAASUVORK5CYII=">
+        </button>
+
+    </header>
+
+    <header>
+        <div class="title">
+            <h1>Browser Games</h1>
+        </div>
+    </header>
+
+    <!-- Sidebar Inhalt/Icons folgt... -->
+    <!-- Milo: Menu Button im Sidebar? -->
+    <div class="sidebar">
+        <ul class="sidebar-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <section class="main-content">
+        <div class="card-position">
+            <div class="card1">
+                <div class="card-details">
+                    <p class="text-title">Game title</p>
+                    <p class="text-body">Here are the details of the Game</p>
+                </div>
+                <button class="card-button">Play</button>
+            </div>
+
+            <div class="card2">
+                <div class="card-details">
+                    <p class="text-title">Game title</p>
+                    <p class="text-body">Here are the details of the Game</p>
+                </div>
+                <button class="card-button">Play</button>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
