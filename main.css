@@ -106,8 +106,6 @@ header {
     transition: left 0.3s ease-in-out;
     /* Verwende left für den Hover-Effekt */
     z-index: 1;
-    padding-top: 60px;
-    /* Platz für den Header */
 }
 
 .sidebar-menu {
@@ -117,6 +115,7 @@ header {
 
 .sidebar-menu li {
     padding: 10px;
+    margin-top: 20px;
 }
 
 .sidebar-menu li a {
@@ -127,6 +126,16 @@ header {
 /* Hover-Effekt für die Sidebar */
 .sidebar:hover {
     left: 0;
+}
+
+.home-icon, .game-icon, .about-icon, .contact-icon {
+    position: absolute;
+    right: 13px;
+}
+
+.menu {
+    margin-bottom: 50px;
+    margin-top: 15px;
 }
 
 .search {
